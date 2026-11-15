@@ -1,0 +1,38 @@
+# Python environments, caches, and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+
+# Local editor and notebook state
+.DS_Store
+.ipynb_checkpoints/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.toml
+
+# Raw corpora, generated vocabulary, and training output
+/datasets/*
+!/datasets/README.md
+/src/vocab.csv
+/artifacts/
+/checkpoints/
+/runs/
+/wandb/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
